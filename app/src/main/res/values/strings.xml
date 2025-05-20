@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Application01</string>
+    <string name="button_name_click1">click me</string>
+    <string name="hello_underline"> <u> hello\n=\*#$%()/ </u></string>
 </resources>
