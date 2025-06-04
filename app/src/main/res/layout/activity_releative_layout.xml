@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn01"
+        android:text="button 01"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView01"
+        android:text="test"
+        android:layout_toLeftOf="@id/btn01"
+        android:layout_above="@id/editText01"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText01"
+        android:hint="Enter Your Name"
+        android:layout_above="@id/btn01"
+        android:inputType="text"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView01"
+        android:src="@drawable/checked1"
+        android:layout_toRightOf="@id/textView01"
+        android:layout_above="@id/textView01"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unchecked1"
+        android:layout_toLeftOf="@id/imageView01"
+        android:layout_above="@id/imageView01"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn02"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="center Button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:id="@+id/textView02"
+        android:layout_above="@id/btn02"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView02"
+        android:hint="it is your password"
+        android:layout_alignBaseline="@id/textView02"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        android:checked="true"/>
+
+</RelativeLayout>
