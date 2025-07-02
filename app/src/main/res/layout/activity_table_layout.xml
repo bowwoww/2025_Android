@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow android:background="#000000">
+        <TextView android:gravity="center"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:text="Name" />
+        <TextView android:gravity="center"
+            android:background="#FFFFFF"
+            android:text="rate"/>
+        <TextView
+            android:layout_margin="1dp"
+            android:background="#FFFFFF"
+            android:text="Address"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:gravity="center"
+            android:text="Tom" />
+        <TextView android:gravity="center"
+            android:text="A"/>
+        <TextView
+            android:text="Taiwan no3"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:gravity="center"
+            android:text="SuperMan Kevin"/>
+        <TextView android:gravity="center"
+            android:text="S"/>
+        <TextView
+            android:text="Solar Mars Nothern"/>
+
+    </TableRow>
+        <Button android:layout_width="match_parent"
+            android:text="Submit"/>
+    <TableRow>
+        <Button
+            android:text="edit"/>
+        <Button
+            android:text="create"/>
+        <Button
+            android:text="delete"/>
+    </TableRow>
+</TableLayout>

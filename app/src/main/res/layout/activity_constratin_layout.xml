@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn01"
+        android:text="button 01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn02"
+        android:text="button 02"
+        app:layout_constraintLeft_toRightOf="@id/btn01"
+        app:layout_constraintBottom_toTopOf="@id/btn01"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn03"
+        android:text="button 03"
+        app:layout_constraintLeft_toRightOf="@id/btn01"
+        app:layout_constraintBottom_toTopOf="@id/btn02"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/center"
+        android:text="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/guideline_horizontal"
+        app:layout_constraintGuide_begin="30dp"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guideline_vertical"
+        app:layout_constraintGuide_begin="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn04"
+        android:text="button 4"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_vertical"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn05"
+        android:text="button 5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text01"
+        android:text="Enter Account:"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:flow_verticalBias="0.5"
+        app:layout_constraintRight_toLeftOf="@id/guideline_vertical"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="your account "
+        android:ems="10"
+        android:id="@+id/edittext01"
+        android:singleLine="true"
+        app:layout_constraintBaseline_toBaselineOf="@id/text01"
+        app:layout_constraintLeft_toRightOf="@id/text01"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
